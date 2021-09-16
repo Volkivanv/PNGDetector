@@ -3,9 +3,8 @@
 #include <fstream>
 
 bool extensionPNG(std::string filepath){
-    std::string extension = filepath.substr(filepath.length()-3,filepath.length()-1);
-    //std::cout << extension;
-    return (extension == "png")||(extension == "PNG");
+    std::string extension = filepath.substr(filepath.length()-4,filepath.length()-1);
+    return (extension == ".png")||(extension == ".PNG");
 }
 
 int main() {
